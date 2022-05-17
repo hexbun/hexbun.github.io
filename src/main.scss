@@ -1,0 +1,39 @@
+@import './vars.scss';
+
+@font-face {
+	font-family: Roboto;
+	src: url('./assets/fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+	font-family: JetBrains-Mono;
+	src: url('./assets/fonts/JetBrainsMono-Regular.ttf');
+}
+
+:global(body),
+:global(html) {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: $primary-color;
+	font-family: Roboto;
+	color: $font-color;
+}
+
+:global(section) {
+	width: 90vw;
+	margin: 0 auto;
+}
+
+:global(p) {
+	margin: 0;
+}
+
+:global(a) {
+	text-decoration: none;
+	color: $action-color;
+}
+
+:global(a:hover) {
+	color: white;
+}
