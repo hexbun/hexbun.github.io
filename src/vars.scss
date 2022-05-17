@@ -2,3 +2,14 @@ $primary-color: #1d1c1e;
 $primary-color-offset: #2c2b2e;
 $font-color: #ababab;
 $action-color: #f5aa42;
+
+@keyframes fade-up-in {
+	0% {
+		opacity: 0;
+		transform: translateY(40px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}

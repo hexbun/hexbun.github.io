@@ -1,8 +1,20 @@
-<script lang="ts">
+<script lang="ts">    
     import workHistory from '../assets/work.json';
+
+    import { inview } from 'svelte-inview';
+
+    let isInView;
+    const options = {
+        rootMargin: '-150px',
+        unobserveOnEnter: true
+    }
 
     let selectedTab = 1;
     let workContent = workHistory.history[0];
+
+    function handleScrollChange({ detail }) {
+        isInView = detail.inView;
+    }
 
     function changeTab(id) {
         selectedTab = id;
@@ -10,8 +22,8 @@
     }
 </script>
 
-<section id="work-history" class="work-history">
-    <div class="section-title">Work History</div>
+<section id="work-history" class="work-history" class:animate-in={isInView}>
+    <div class="section-title" use:inview={options} on:change={handleScrollChange}>Work History</div>
     <div class="table">
         <div class="tabs">
             {#each workHistory.history as work}
@@ -39,7 +51,15 @@
 <style type="text/scss">
     @import '../vars';
 
+    .animate-in {
+        animation-duration: 1s;
+        animation-name: fade-up-in;
+        animation-fill-mode: forwards;
+    }
+
     .work-history {
+        opacity: 0;
+
         .table {
             overflow: hidden;
         
