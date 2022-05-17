@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<title>Alex Betts</title>
+	<title>hexbun | Alex Betts</title>
 </svelte:head>
 
 <main>

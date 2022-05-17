@@ -39,57 +39,67 @@
 <style type="text/scss">
     @import '../vars';
 
-    .table {
-        overflow: hidden;
-    
-        .tabs {
-            display: flex;
-            margin-bottom: 2rem;
-            white-space: nowrap;
-            overflow-x: scroll;
-        }
+    .work-history {
+        .table {
+            overflow: hidden;
+        
+            .tabs {
+                display: flex;
+                margin-bottom: 2rem;
+                white-space: nowrap;
+                overflow-x: scroll;
+            }
 
-        .tab {
-            background-color: transparent;
-            border: none;
-            border-bottom: 2px $font-color solid;
-            padding: 1rem;
-            color: $font-color;
-        }
+            .tabs::-webkit-scrollbar-thumb {
+                background: transparent;
+            }
 
-        .tab:active, .tab:hover, .tab.active {
+            .tab {
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px $font-color solid;
+                padding: 1rem;
+                color: $font-color;
+                transition: all 0.5s;
+            }
+
+            .tab:active, .tab:hover, .tab.active {
                 border-color: $action-color;
                 color: $action-color;
-        }
-
-        .content {
-            div {
-                padding-bottom: 0.5rem;
+                background-color: $primary-color-offset;
             }
 
-            .title {
-                font-size: 18pt;
-                font-weight: bold;
-            }
+            .content {
+                div {
+                    padding-bottom: 0.5rem;
+                }
 
-            .company-duration {
-                font-family: JetBrains-Mono;
-                font-size: 10pt;
-                margin-bottom: 1rem;
-            }
+                .title {
+                    font-size: 18pt;
+                    font-weight: bold;
+                }
 
-            .details {
-                .detail {
-                    list-style: none;
+                .company-duration {
+                    font-family: JetBrains-Mono;
+                    font-size: 10pt;
                     margin-bottom: 1rem;
                 }
 
-                .detail::before {
-                    content: "◆";
-                    color: $action-color;
-                    margin-left: -2rem;
-                    display: inline-block;
-                    width: 2rem;
+                .details {
+                    min-height: 30vh;
+
+                    .detail {
+                        list-style: none;
+                        margin-bottom: 1rem;
+                    }
+
+                    .detail::before {
+                        content: "◆";
+                        color: $action-color;
+                        margin-left: -2rem;
+                        display: inline-block;
+                        width: 2rem;
+                    }
                 }
             }
         }
