@@ -23,6 +23,7 @@
 :global(section) {
 	width: 90vw;
 	margin: 0 auto;
+	padding: 50px 0;
 }
 
 :global(p) {
@@ -36,4 +37,45 @@
 
 :global(a:hover) {
 	color: white;
+}
+
+:global(.section-title) {
+	padding-bottom: 2.5rem;
+	font-size: 20pt;
+	font-weight: bold;
+	font-family: JetBrains-Mono;
+}
+
+:global(::-webkit-scrollbar) {
+	width: 5px;
+}
+
+:global(::-webkit-scrollbar-track) {
+	background: $primary-color;
+}
+
+:global(::-webkit-scrollbar-thumb) {
+	background: $font-color;
+}
+
+:global(::-webkit-scrollbar-thumb:hover) {
+	background: $font-color;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	:global(section) {
+		width: 60vw;
+	}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+	:global(section) {
+		width: 60vw;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	:global(section) {
+		width: 50vw;
+	}
 }

@@ -22,7 +22,7 @@
     .intro {
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        height: calc(100vh - 100px);
         justify-content: center;
 
         p {
@@ -122,10 +122,6 @@
     }
 
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
-        section {
-            width: 60vw;
-        }
-
         .header-hi {
             font-size: 16pt;
             
@@ -148,10 +144,6 @@
     }
 
     @media only screen and (min-width: 1024px) and (max-width: 1199px) {
-        section {
-            width: 60vw;
-        }
-
         .header-hi {
             font-size: 16pt;
             
@@ -176,10 +168,6 @@
     }
 
     @media only screen and (min-width: 1200px) {
-        section {
-            width: 50vw;
-        }
-
         .header-hi {
             font-size: 16pt;
             
@@ -189,11 +177,11 @@
         }
 
         .header-name {
-            font-size: 5.5vw;
+            font-size: clamp(40px, 5.5vw, 150px);
         }
 
         .header-description {
-            font-size: 2.8vw;
+            font-size: clamp(20px, 2.8vw, 150px);
             line-height: 1.2;
         
             .flip-container {
