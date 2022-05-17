@@ -42,7 +42,7 @@
     .header-hi {
         color: $action-color;
         font-family: JetBrains-Mono;
-        font-size: 3vw;
+        font-size: 4vw;
 
         span {
             font-size: 4vw;
@@ -51,19 +51,19 @@
 
     .header-name {
         color: white;
-        font-size: 8vw;
+        font-size: 11vw;
         font-weight: 700;
         font-family: JetBrains-Mono;
         padding: 1rem 0;
     }
 
     .header-description {
-        font-size: 5vw;
+        font-size: 8vw;
         line-height: 3.1rem;
 
         .flip-container {
             white-space: nowrap;
-            display: inline;
+            display: block;
             height: 36px;
             width: 100%;
 
