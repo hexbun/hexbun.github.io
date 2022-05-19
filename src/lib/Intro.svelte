@@ -24,6 +24,8 @@
         flex-direction: column;
         height: calc(100vh - 100px);
         justify-content: center;
+        margin-bottom: 0;
+        padding-top: 0;
 
         p {
             opacity: 0;

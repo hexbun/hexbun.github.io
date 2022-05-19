@@ -1,7 +1,7 @@
 <script lang="ts">    
-    import workHistory from '../assets/work.json';
-
     import { inview } from 'svelte-inview';
+
+    import workHistory from '../assets/work.json';
 
     let isInView;
     const options = {
@@ -9,12 +9,12 @@
         unobserveOnEnter: true
     }
 
-    let selectedTab = 1;
-    let workContent = workHistory.history[0];
-
     function handleScrollChange({ detail }) {
         isInView = detail.inView;
     }
+
+    let selectedTab = 1;
+    let workContent = workHistory.history[0];
 
     function changeTab(id) {
         selectedTab = id;
@@ -50,12 +50,6 @@
 
 <style type="text/scss">
     @import '../vars';
-
-    .animate-in {
-        animation-duration: 1s;
-        animation-name: fade-up-in;
-        animation-fill-mode: forwards;
-    }
 
     .work-history {
         opacity: 0;

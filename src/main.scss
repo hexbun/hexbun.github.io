@@ -18,12 +18,15 @@
 	background-color: $primary-color;
 	font-family: Roboto;
 	color: $font-color;
+	scroll-behavior: smooth;
 }
 
 :global(section) {
 	width: 90vw;
 	margin: 0 auto;
 	padding: 50px 0;
+	padding-top: 100px;
+	margin-bottom: 20vh;
 }
 
 :global(p) {
@@ -41,7 +44,7 @@
 
 :global(.section-title) {
 	padding-bottom: 2.5rem;
-	font-size: 26pt;
+	font-size: 21pt;
 	font-weight: bold;
 	font-family: JetBrains-Mono;
 }
@@ -62,15 +65,19 @@
 	background: $font-color;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+:global(.animate-in) {
+	animation-duration: 1s;
+	animation-name: fade-up-in;
+	animation-fill-mode: forwards;
+}
+
+@media only screen and (min-width: 768px) {
 	:global(section) {
 		width: 60vw;
 	}
-}
 
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
-	:global(section) {
-		width: 60vw;
+	:global(.section-title) {
+		font-size: 26pt;
 	}
 }
 
