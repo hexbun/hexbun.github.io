@@ -75,6 +75,7 @@
                 padding: 1rem;
                 color: $font-color;
                 transition: all 0.5s;
+                font-size: 12pt;
             }
 
             .tab:active, .tab:hover, .tab.active {
