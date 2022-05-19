@@ -89,7 +89,7 @@
                 }
 
                 .title {
-                    font-size: 18pt;
+                    font-size: 20pt;
                     font-weight: bold;
                 }
 
@@ -101,6 +101,7 @@
 
                 .details {
                     min-height: 30vh;
+                    font-size: 13pt;
 
                     .detail {
                         list-style: none;
@@ -108,7 +109,7 @@
                     }
 
                     .detail::before {
-                        content: "◆";
+                        content: "‣";
                         color: $action-color;
                         margin-left: -2rem;
                         display: inline-block;
