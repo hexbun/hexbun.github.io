@@ -18,7 +18,7 @@
         <div class="description">
             <p>I've loved programming ever since my dad introduced me to the <a href="https://www.arduino.cc/">Arduino</a> when I was 11 years old. It's funny how seeing something as simple as an LED being turned on and off by the power of code can start an avalanche of curiosity which led me to where I am today.</p>
             <p>Today, I'm a student at the <a href="https://www.kent.ac.uk/">University of Kent</a> studying computer science with AI and doing my year in industry with <a href="https://www.edwardsvacuum.com/">Edwards Vacuum</a>. I am working as part of the UI team, creating the new standard for Edwards pump monitoring technology.</p>
-            <p>When I'm not writing code, I like to dabble in the art of <span>origami</span>, catch up on some <span>reading</span>, and test my patient with <span>cooking</span>.</p>
+            <p>When I'm not writing code, I like to dabble in the art of <span>origami</span>, catch up on some <span>reading</span>, and test my patience with <span>cooking</span>.</p>
         </div>
         <div class="image">
             <img src="rabbit.svg" alt="rabbit" />
@@ -75,11 +75,10 @@
         @media only screen and (min-width: 1200px) {
             .content {
                 flex-direction: row;
-                align-items: center;
 
                 .image {
                     img {
-                        width: 16vw;
+                        width: 14vw;
                     }
                 }
             }
