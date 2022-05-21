@@ -61,7 +61,7 @@
 
     .header-description {
         font-size: 8vw;
-        line-height: 3.1rem;
+        line-height: 1.2;
 
         .flip-container {
             white-space: nowrap;
